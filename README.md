@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Frontend Mentor](https://your-solution-url.com)
-- Live Site URL: [Netlify](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/intro-component-with-signup-form-lgRjl0uSM)
+- Live Site URL: [Netlify](https://alexsans-intro-component-with-signup-form.netlify.app/)
 
 ## My process
 
