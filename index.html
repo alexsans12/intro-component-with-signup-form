@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	<title>Frontend Mentor | Intro component with sign up form</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header class="header-intro">
+		<h1 class="header-intro__title">Learn to code by watching others</h1>
+		<p class="header-intro__text">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+		but understanding how developers think is invaluable.</p> 
+	</header>
+	<main class="main-intro">
+		<button class="main-intro__button">
+			<span class="button-intro__text"><span class="button-intro__text--bold">Try it free 7 days</span> then $20/mo. thereafter</span>
+		</button>
+		<form class="card-signup">
+			<div class="card-signup__group-input">
+				<input class="card-signup__input" type="text" id="name_txt" placeholder="First Name">
+				<span class="card-signup__error-text">First Name cannot be empty</span>
+			</div>
+			<div class="card-signup__group-input">
+				<input class="card-signup__input" type="text" id="last_name_txt" placeholder="Last Name">
+				<span class="card-signup__error-text">Last Name  cannot be empty</span>
+			</div>
+			<div class="card-signup__group-input">
+				<input class="card-signup__input" type="email" id="email_txt" placeholder="Email Address">
+				<span class="card-signup__error-text">Looks like this is not an email</span>
+			</div>
+			<div class="card-signup__group-input">
+				<input class="card-signup__input" type="password" id="pass_txt" placeholder="Password">
+				<span class="card-signup__error-text">Password cannot be empty</span>
+			</div>
+			<button class="card-signup__button">
+				<span class="button-signup__text">Claim your free trial</span> 
+			</button>
+			<footer class="card-signup__footer">
+				<p class="footer-signup__text">By clicking the button, you are agreeing to our <a href="#" class="footer-signup__text--bold">Terms and Services</a></p>
+			</footer>
+		</form>
+	</main>
+	<script src="./js/app.js"></script>
+</body>
+</html>

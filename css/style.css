@@ -1,0 +1,274 @@
+:root {
+    --Red: 0, 100%, 74%; 
+    --Green: 154, 59%, 51%;
+
+    --Blue: 248, 32%, 49%;
+
+    --Dark_Blue: 249, 10%, 26%; 
+    --Grayish_Blue: 246, 25%, 77%;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: url('../images/bg-intro-mobile.png') top hsla(var(--Red), 1);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        flex-direction: row;
+        background: url('../images/bg-intro-desktop.png') left center / cover hsla(var(--Red), 1);
+    }
+}
+
+.header-intro {
+    max-width: 350px;
+    margin: 75px 30px 40px;
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .header-intro {
+        width: 38%;
+        max-width: none;
+        text-align: left;
+        margin: 0 20px 0 0;
+    }
+}
+
+.header-intro__title {
+    font-size: 1.8rem;
+}
+
+@media screen and (min-width: 800px) {
+    .header-intro__title {
+        font-size: 3.2rem;
+    }
+}
+
+.header-intro__text {
+    font-size: 16px;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+
+@media screen and (min-width: 800px) {
+    .header-intro__text {
+        margin-right: 30px;
+    }
+}
+
+.main-intro {
+    text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+    .main-intro {
+        width: 40%;
+    }
+}
+
+.main-intro__button {
+    background-color: hsl(var(--Blue));
+    max-width: 350px;
+    padding: 20px 40px;
+    margin: 0 20px 30px;
+    border: none;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 8px 0 0 hsla(var(--Dark_Blue), 0.25);
+    -moz-box-shadow: 0 8px 0 0 hsla(var(--Dark_Blue), 0.25);
+    box-shadow: 0 8px 0 0 hsla(var(--Dark_Blue), 0.25);
+}
+
+@media screen and (min-width: 800px) {
+    .main-intro__button {
+        width: 100%;
+        max-width: none;
+        margin: 0 0 30px 0;
+    }
+}
+
+.main-intro__button:hover {
+    cursor: pointer;
+    background-color: hsla(var(--Blue), 0.9);
+}
+
+.button-intro__text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #ffffff;
+}
+
+.button-intro__text--bold {
+    font-weight: 600;
+}
+
+.card-signup {
+    background-color: #ffffff;
+    max-width: 350px;
+    margin: 0 20px 4rem;
+    padding: 25px 25px 15px 25px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 0 0 hsla(var(--Dark_Blue), 0.25);
+    -moz-box-shadow: 0 10px 0 0 hsla(var(--Dark_Blue), 0.25);
+    box-shadow: 0 10px 0 0 hsla(var(--Dark_Blue), 0.25);
+}
+
+@media screen and (min-width: 800px) {
+    .card-signup {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        padding: 40px 40px 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .card-signup {
+        padding: 40px;
+    }
+}
+
+.card-signup__group-input {
+    display: flex;
+    position: relative;
+    border: 1px solid hsla(var(--Dark_Blue), 0.3);
+    border-radius: 5px;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 1440px) {
+    .card-signup__group-input {
+        margin-bottom: 40px;
+    }
+}
+
+.card-signup__input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    padding: 15px 0 15px 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .card-signup__input {
+        padding-left: 30px;
+    }
+}
+
+.card-signup__input:focus-visible {
+    outline: none;
+}
+
+.card-signup__input::placeholder {
+    font-weight: 600;
+    color: hsla(var(--Dark_Blue));
+}
+
+.card-signup__group-input--error {
+    border: 1px solid hsl(var(--Red));
+}
+
+
+.card-signup__group-input--error::before {
+    content: url('../images/icon-error.svg');
+    position: absolute;
+    top: 30%;
+    right: 25px;
+}
+
+.card-signup__input--error {
+    color: hsl(var(--Red));
+}
+
+.card-signup__input--error::placeholder {
+    color: transparent;
+}
+
+.card-signup__error-text {
+    display: none;
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: italic;
+    color: hsl(var(--Red));
+}
+
+.card-signup__error-text--show {
+    display: block;
+}
+
+.card-signup__button {
+    background-color: hsl(var(--Green));
+    max-width: 320px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 20px 15px;
+    -webkit-box-shadow: inset 0 -5px 0 0 hsla(var(--Dark_Blue), 0.20);
+    -moz-box-shadow: inset 0 -5px 0 0 hsla(var(--Dark_Blue), 0.20);
+    box-shadow: inset 0 -5px 0 0 hsla(var(--Dark_Blue), 0.20);
+}
+
+.card-signup__button:hover {
+    background-color: hsla(var(--Green), 0.8);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px) {
+    .card-signup__button {
+        max-width: none;
+    }
+}
+
+
+.button-signup__text {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.card-signup__footer {
+    margin: 0 20px;
+}
+
+@media screen and (min-width: 1440px) {
+    .card-signup__footer {
+        margin: 15px 20px 0;
+    }
+}
+
+.footer-signup__text {
+    color: hsl(var(--Grayish_Blue));
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.footer-signup__text--bold {
+    color: hsl(var(--Red));
+    font-weight: 700;
+    text-decoration: none;
+}
